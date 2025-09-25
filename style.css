@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap');
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(white,rgb(238, 165, 165));
+}
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0px 60px 35px;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+.card-list .card-item{
+    list-style: none;
+    width: auto;
+}
+.card-list .card-item .card-link{
+    user-select: none;
+    width: 100%;
+    max-width: 350px;
+    display: contents;
+    background-color: white;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease;
+}
+.card-list .card-item .card-link:active{
+    cursor: grabbing;
+}
+.card-list .card-item .card-link:hover{
+    border-color: rgba(239, 106, 58, 0.55);
+}
+.card-list .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card-list .card-link .badge{
+    color: rgb(248, 155, 121);
+    background-color: antiquewhite;
+    margin: 16px 0 18px;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    width: fit-content;
+    border-radius: 50px;
+    font-weight: 500;
+}
+.card-list .card-link .badge.skills {
+    color: rgb(141, 106, 3);
+    background: rgb(240, 229, 207);
+}
+.card-list .card-link .badge.projects {
+    color: rgb(4, 66, 252);
+    background: rgb(191, 201, 254);
+}
+.card-list .card-link .badge.contactinfo {
+    color: rgb(174, 183, 6);
+    background: rgb(242, 245, 233);
+}
+.card-list .card-link .card-title{
+    color: black;
+    font-size: 1.19rem;
+    font-weight: 600;
+}
+.card-list .card-link .card-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 20px 0 5px;
+    border: 2px solid rgb(101, 119, 237);
+    background: none;
+    cursor: pointer;
+}
+.card-list .card-link:hover .card-button{
+    color: #fff;
+    background: rgb(164, 174, 248);
+    
+}
+.card-wrapper .swiper-pagination-bullet{
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: rgb(101, 119, 237);
+}
+.card-wrapper .swiper-pagination-bullet-active{
+    opacity: 1;
+}
+.card-wrapper .swiper-slide-button{
+    color:rgb(101, 119, 237);
+    margin-top: -35px;
+}
+@media screen and (max-width:768px) {
+    .card-wrapper{
+        margin: 0 10px 25px;
+    }
+    .card-wrapper .swiper-slide-button{
+        display: none;
+    }
+}
