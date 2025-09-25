@@ -22,8 +22,6 @@ Swiper.js
  -------
 🚀 How to Run Locally
 Clone the repo:
-git clone https://github.com/sujay-for-tech-01/card_slider.git
+git clone https://github.com/sujay-for-tech-01/Card_Slider.git
 Open index.html in your browser.
 That’s it 🎉
-
-![Project Screenshot](Responsive-card-slider\card_slider_final.png)
