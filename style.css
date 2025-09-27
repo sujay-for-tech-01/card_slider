@@ -27,7 +27,7 @@ body{
     user-select: none;
     width: 100%;
     max-width: 350px;
-    display: contents;
+    display: block;
     background-color: white;
     padding: 18px;
     border-radius: 12px;
